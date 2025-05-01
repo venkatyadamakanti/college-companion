@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><b><i><u>Sree dattha group of instutions</u></i></b></h1>
+        <h1>Campus Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#timetable">Timetable</a></li>
+                <li><a href="#reminders">Class Reminders</a></li>
+                <li><a href="#assignments">Assignment Deadlines</a></li>
+                <li><a href="#map">Campus Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Timetable Section -->
+        <section id="timetable">
+            <h2>Timetable Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 AM</th>
+                        <th>11:00 AM</th>
+                        <th>1:00 PM</th>
+                        <th>3:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Math</td>
+                        <td>Physics</td>
+                        <td>Chemistry</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Biology</td>
+                        <td>Math</td>
+                        <td>History</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Class Reminders Section -->
+        <section id="reminders">
+            <h2>Class Reminders</h2>
+            <ul id="reminderList">
+                <!-- Reminders will be dynamically added here -->
+            </ul>
+            <input type="text" id="reminderInput" placeholder="Add a new reminder">
+            <button onclick="addReminder()">Add Reminder</button>
+        </section>
+
+        <!-- Assignment Deadlines Section -->
+        <section id="assignments">
+            <h2>Assignment Deadlines</h2>
+            <ul id="assignmentList">
+                <li>Math Assignment - Due: May 5, 2025</li>
+                <li>Physics Lab Report - Due: May 7, 2025</li>
+                <li>History Essay - Due: May 10, 2025</li>
+            </ul>
+        </section>
+
+        <!-- Campus Map Section -->
+        <section id="map">
+            <h2>Campus Map</h2>
+            <iframe
+                src="https://www.google.com/maps/place/Sree+Dattha+Institute+Of+Engineering+And+Science/@17.2089755,78.6203864,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcba7ffefe38279:0xdf8b2d878e049b84!8m2!3d17.2089755!4d78.6229613!16s%2Fg%2F11grbvwszl?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Campus Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
