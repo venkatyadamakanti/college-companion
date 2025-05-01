@@ -1,1 +1,1 @@
-# college-companion
+# college
